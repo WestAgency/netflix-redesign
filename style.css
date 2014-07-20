@@ -1,0 +1,371 @@
+/* ==========================================================================
+   Netflix Redesign by West
+   ========================================================================== */
+
+/**
+ * The code is currently only made for the genre pages on Netflix: http://www2.netflix.com/WiGenre
+ * Use a plugin like Stylebot for use / previewing / development: https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
+html {
+    background: #000;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: #eaeaea;
+    font-family: 'Oswald', sans-serif;
+}
+
+.body-new-header>.bd {
+    margin: 120px 40px 0 40px;
+}
+
+.member-header-2014 {
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.member-header-2014:hover {
+    background-color: rgba(255,255,255,0.98);
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.title {
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#genreControls {
+    border-bottom: 1px solid #333;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0 0 10px 0;
+}
+
+.lockup {
+    border: none;
+    margin: 0;
+    height: auto;
+    width: 12.5%;
+}
+
+@media  (max-width: 1200px) {
+  .lockup {    
+    width: 20% !important;
+  }
+}
+
+@media  (max-width: 600px) {
+  .lockup {    
+    width: 33.33% !important;
+  }
+}
+
+.lockup img {
+    width: 100%;
+    height: auto;
+}
+
+#genrePage {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+a:hover {
+    border-bottom: 1px solid #e3e3e3;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.flyout-menu-box>.flyout-trigger>a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: #999;
+    margin: 0px 0 0 14px;
+    top: 2px;
+    position: relative;
+}
+
+.flyout-menu-box>.flyout-trigger>a:hover {
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.98);
+    color: #000;
+}
+
+.flyout-menu-box>.flyout-trigger .flyout-menu-container>.flyout-menu>li>a {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.flyout-menu-box>.flyout-trigger .flyout-menu-container>.flyout-menu>li>a:hover {
+    background: rgba( 255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.flyout-menu-box>.flyout-trigger .flyout-menu-container {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #fff;
+}
+
+.flyout-menu-box>label {
+    font-weight: 100;
+    color: #666;
+}
+
+#genreSortOrder .flyout-menu-box>label:after {
+    content: ":";
+    color: #666;
+}
+
+.flyout-menu-box>.flyout-trigger {
+    top: -2px;
+}
+
+.member-header-2014 #global-search div #searchField {
+    font-size: 18px;
+}
+
+#global-search div #searchField.default {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+#global-search div #searchField {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.member-header-2014 #global-search div #searchField:before {
+    content: "Sök efter";
+    color: #fff;
+    background: Red;
+    position: absolute;
+}
+
+#global-search button {
+    left: -16px;
+    top: 35px;
+}
+
+#profileSelector .current-profile .avatar {
+    display: none;
+}
+
+#profileSelector .current-profile .name {
+    font-weight: 100;
+    font-size: 19px;
+    top: -2px;
+    position: relative;
+}
+
+#genreControls>.rightControls #genreSortOrder>.flyout-trigger {
+    min-width: 180px;
+}
+
+#hd .nav-wrap .subnav-wrap {
+    /*display: none;*/
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #fff;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+#hd .subnav-wrap .sub-nav-tabs li {
+    margin: 10px 0 10px 0;
+}
+
+#hd .nav-wrap #global-header li.nav-item ul a {
+    text-shadow: none;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    line-height: 28px;
+    border: none;
+}
+
+#hd .nav-wrap #global-header li.nav-item ul a:hover {
+    text-decoration: none;
+    border: none;
+}
+
+.sub-nav-tab-divider {
+    background-color: #333;
+    left: 165px;
+    height: 100%;
+}
+
+/*#hd .subnav-wrap {
+    display: block;
+    opacity: 0;
+}
+
+#hd .nav-wrap #global-header li.selected .subnav-wrap {
+    display: block;
+    opacity: 1;
+}*/
+
+#profileSelector .profiles-container {
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#profileSelector .profiles {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#profileSelector .links {
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#profileSelector .profiles-container a {
+    color: #fff;
+    font-weight: 100;
+    border: none;
+}
+
+.profiles-container a:hover {
+    border: none;
+}
+
+.lockup a {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0) ;
+}
+
+.lockup:hover>.playHover {
+}
+
+#bob-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: 100;
+    box-shadow: none;
+}
+
+#bob-container .bob-header {
+    background: rgba(185, 9, 11, 0.3);
+}
+
+#bob-container .duration, #bob-container .mpaaRating, #bob-container .runtime, #bob-container .year, #bob-container .persons dt, #bob-container .bob-actions .ratingHeader, .nf-button {
+    font-weight: 100;
+}
+
+.nf-button {
+    font-size: 12px;
+}
+
+#bob-container .bob-buttons {
+    width: auto;
+    float: right;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#bob-container .bob-buttons .cta-mylist>.icon {
+    display: none;
+}
+
+#bob-container .bob-buttons .nf-button, #bob-container .bob-buttons .nf-button:hover {
+    box-shadow: none;
+    margin: 0;
+}
+
+.starbar .cta-not-interested {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+}
+
+#bob-container .bob-actions {
+    border-top: 1px solid #222;
+}
+
+#bob-container .bob-arrow.left {
+    border-right: 41px solid rgba(0, 0, 0, 0.5);
+}
+
+#bob-container .bob-arrow.right {
+    border-left: 41px solid rgba(0, 0, 0, 0.5);
+}
+
+#hd .nav-wrap #global-header li.nav-item-current, #hd .nav-wrap #global-header li.nav-item a {
+    font-size: 15px;
+}
+
+#hd .logo a {
+    border: none;
+}
+
+#footer {
+    background: none;
+    border-top: 1px solid #222;
+}
+
+#footer .nav-wrapper, .tos-wrap {
+    margin: 0px 0 0 20px;
+}
+
+#footer .nav-wrapper {
+    margin-top: 20px;
+}
