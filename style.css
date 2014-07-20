@@ -9,12 +9,14 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 
-html {
+html, .dmbr, .taste-container .taste-ribbon {
     background: #000;
+    border: none;
 }
 
 body {
     margin: 0;
+    padding: 0;
     background: #000;
     color: #eaeaea;
     font-family: 'Oswald', sans-serif;
@@ -24,7 +26,11 @@ body {
     margin: 120px 40px 0 40px;
 }
 
-.member-header-2014 {
+#fground #bd.main-content {
+    background: #000;
+}
+
+.member-header-2014, #hd {
     background-color: rgba(0,0,0,0.7);
     border: none;
     -webkit-transition: all 350ms ease;
@@ -34,7 +40,7 @@ body {
     transition: all 350ms ease;
 }
 
-.member-header-2014:hover {
+.member-header-2014:hover, #hd:hover {
     background-color: rgba(255,255,255,0.98);
     -webkit-transition: all 350ms ease;
     -moz-transition: all 350ms ease;
@@ -43,7 +49,7 @@ body {
     transition: all 350ms ease;
 }
 
-.title {
+.title, .dmbr .content .dmbr-header-container h2.dmbr-header {
     color: #fff;
     font-weight: 300;
     text-transform: uppercase;
@@ -57,11 +63,62 @@ body {
     padding: 0 0 10px 0;
 }
 
+.dmbr .content div .rate-container .rate-boxshot .boxShot {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 .lockup {
     border: none;
     margin: 0;
     height: auto;
     width: 12.5%;
+}
+
+.recentlyWatched, .recentlyWatched .agMovie, .agMovie .boxShot img, .recentlyWatched .boxShot {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.mrow .bd .recentlyWatched, .recentlyWatched .agMovie {
+    width: 250px;
+    border: none;
+}
+
+.BobMovie-arrow {
+    display: none;
+}
+
+img:hover, img a:hover {
+    border: none;
+}
+
+.recentlyWatched .boxShot {
+    width: 100%;
+}
+
+.agMovieSetSlider .agMovie {
+    width: 250px;
+    height: auto;
+}
+
+.slider {
+    height: 355px;
+}
+
+.agMovieSetSlider span.boxShot {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: auto;
+}
+
+.agMovie .boxShot img {
+    width: 100%;
+    height: auto;
 }
 
 @media  (max-width: 1200px) {
@@ -79,6 +136,18 @@ body {
 .lockup img {
     width: 100%;
     height: auto;
+}
+
+.mrow .hd h3, .mrow .hd h3 a {
+    color: #fff;
+    font-weight: 100 ;
+    text-transform: uppercase ;
+    font-size: 32px;
+    font-family: 'Oswald';
+}
+
+.mrow .hd h3 {
+    margin-bottom: 20px;
 }
 
 #genrePage {
@@ -113,7 +182,7 @@ a:hover {
     border: none;
     color: #999;
     margin: 0px 0 0 14px;
-    top: 2px;
+    top: 4px;
     position: relative;
 }
 
@@ -158,11 +227,12 @@ a:hover {
     top: -2px;
 }
 
-.member-header-2014 #global-search div #searchField {
+.member-header-2014 #global-search div #searchField, #hd #global-search-form #global-search #searchField {
     font-size: 18px;
+    font-family: 'Oswald';
 }
 
-#global-search div #searchField.default {
+#global-search div #searchField.default, #hd #global-search-form #global-search #searchField {
     background: rgba(0, 0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0);
     -webkit-transition: all 200ms ease;
@@ -172,7 +242,7 @@ a:hover {
     transition: all 200ms ease;
 }
 
-#global-search div #searchField {
+#global-search div #searchField, #hd #global-search-form #global-search #searchField {
     background: rgba(0, 0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -181,6 +251,10 @@ a:hover {
     -ms-transition: all 200ms ease;
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
+}
+
+#bd {
+    margin: 60px 40px 0 40px ;
 }
 
 .member-header-2014 #global-search div #searchField:before {
@@ -199,11 +273,12 @@ a:hover {
     display: none;
 }
 
-#profileSelector .current-profile .name {
+#profileSelector .current-profile .name, #account-tools .acct-menu-dropdown-trigger {
     font-weight: 100;
     font-size: 19px;
     top: -2px;
     position: relative;
+    color: #333;
 }
 
 #genreControls>.rightControls #genreSortOrder>.flyout-trigger {
@@ -298,14 +373,32 @@ a:hover {
 .lockup:hover>.playHover {
 }
 
-#bob-container {
+#bob-container, #BobMovie-content {
     background-color: rgba(0, 0, 0, 0.8);
     font-weight: 100;
     box-shadow: none;
+    border: none;
 }
 
-#bob-container .bob-header {
+#BobMovie {
+    font-weight: 100;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+}
+
+#bob-container .bob-header, .bobMovieHeader {
     background: rgba(185, 9, 11, 0.3);
+}
+
+#BobMovie .bobMovieHeader {
+    border: none;
+    padding-bottom: 10px;
+}
+
+#BobMovie .interactive .title {
+    font-size: 30px;
+    background: none;
 }
 
 #bob-container .duration, #bob-container .mpaaRating, #bob-container .runtime, #bob-container .year, #bob-container .persons dt, #bob-container .bob-actions .ratingHeader, .nf-button {
@@ -353,6 +446,19 @@ a:hover {
     font-size: 15px;
 }
 
+.controlTitle, .controlTitle a, .rowTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 300 ;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.rowTitle {
+    margin-left: 305px;
+}
+
 #hd .logo a {
     border: none;
 }
@@ -366,6 +472,61 @@ a:hover {
     margin: 0px 0 0 20px;
 }
 
+#account-tools .acct-menu-dropdown-trigger {
+    background: transparent url(http://cdn-0.nflximg.com/en_us/ffe/headers/header_icons_sprite.png) 100% -74px no-repeat;
+}
+
+.bobbable {
+    width: 100% ;
+    height: auto ;
+}
+
 #footer .nav-wrapper {
     margin-top: 20px;
 }
+
+.profileImg, #BobMovie-arrow {
+    display: none;
+}
+
+.lockup>.playHover {
+    background-image: none;
+}
+
+.agMovieSetSlider .boxShotDivider, .mrows .mrow .evidence, .mrows .mrow .facet-control {
+    display: none;
+}
+
+.mrow .triangleBtns .sliderButton, .mrow .slider-button {
+    height: 420px;
+    max-height: 420px;
+}
+
+span.boxShot-197 a.playLink:hover, span.boxShot-197 a.playLinkNotBobbable:hover, span.boxShot-197.active > a.playLink, span.boxShot-197.active > a.playLinkNotBobbable, span.boxShot-166 a.playLink:hover, span.boxShot-166 a.playLinkNotBobbable:hover, span.boxShot-166.active > a.playLink, span.boxShot-166.active > a.playLinkNotBobbable, span.boxShot-150 a.playLink:hover, span.boxShot-150 a.playLinkNotBobbable:hover, span.boxShot-150.active > a.playLink, span.boxShot-150.active > a.playLinkNotBobbable {
+    background-image: none;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+a.playLink {
+    border: none;
+}
+
+.mrow-rating, .mrow-rating .hd, .mrow-rating .bd {
+    background-color: #000;
+}
+
+#BobMovie dt {
+    font-weight: 100;
+}
+
+.mrow .hd {
+    height: 40px;
+}
+
+.mdpLink, #BobMovie .bobMovieHeader .title, .mdpLink:hover, #BobMovie .bobMovieHeader .title:hover {
+    border: none;
+}
+
