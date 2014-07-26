@@ -7,388 +7,13 @@
  * Use a plugin like Stylebot for use / previewing / development: https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en
  */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-
-html, .dmbr, .taste-container .taste-ribbon {
-    background: #000;
-    border: none;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #000;
-    color: #eaeaea;
-    font-family: 'Oswald', sans-serif;
-}
-
-.body-new-header>.bd {
-    margin: 120px 40px 0 40px;
-}
-
-#fground #bd.main-content {
-    background: #000;
-}
-
-.member-header-2014, #hd {
-    background-color: rgba(0,0,0,0.7);
-    border: none;
-    -webkit-transition: all 350ms ease;
-    -moz-transition: all 350ms ease;
-    -ms-transition: all 350ms ease;
-    -o-transition: all 350ms ease;
-    transition: all 350ms ease;
-}
-
-.member-header-2014:hover, #hd:hover {
-    background-color: rgba(255,255,255,0.98);
-    -webkit-transition: all 350ms ease;
-    -moz-transition: all 350ms ease;
-    -ms-transition: all 350ms ease;
-    -o-transition: all 350ms ease;
-    transition: all 350ms ease;
-}
-
-.title, .dmbr .content .dmbr-header-container h2.dmbr-header {
-    color: #fff;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-#genreControls {
-    border-bottom: 1px solid #333;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    padding: 0 0 10px 0;
-}
-
-.dmbr .content div .rate-container .rate-boxshot .boxShot {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-.lockup {
-    border: none;
-    margin: 0;
-    height: auto;
-    width: 12.5%;
-}
-
-.recentlyWatched, .recentlyWatched .agMovie, .agMovie .boxShot img, .recentlyWatched .boxShot {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-.mrow .bd .recentlyWatched, .recentlyWatched .agMovie {
-    width: 250px;
-    border: none;
-}
-
-.BobMovie-arrow {
-    display: none;
-}
-
-img:hover, img a:hover {
-    border: none;
-}
-
-.recentlyWatched .boxShot {
-    width: 100%;
-}
-
-.agMovieSetSlider .agMovie {
-    width: 250px;
-    height: auto;
-}
-
-.slider {
-    height: 355px;
-}
-
-.agMovieSetSlider span.boxShot {
-    padding: 0;
-    margin: 0;
-    border: none;
-    width: 100%;
-    height: auto;
-}
-
-.agMovie .boxShot img {
-    width: 100%;
-    height: auto;
-}
-
-@media  (max-width: 1200px) {
-  .lockup {    
-    width: 20% !important;
-  }
-}
-
-@media  (max-width: 600px) {
-  .lockup {    
-    width: 33.33% !important;
-  }
-}
-
-.lockup img {
-    width: 100%;
-    height: auto;
-}
-
-.mrow .hd h3, .mrow .hd h3 a {
-    color: #fff;
-    font-weight: 100 ;
-    text-transform: uppercase ;
-    font-size: 32px;
-    font-family: 'Oswald';
-}
-
-.mrow .hd h3 {
-    margin-bottom: 20px;
-}
-
-#genrePage {
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-a:hover {
-    border-bottom: 1px solid #e3e3e3;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-.flyout-menu-box>.flyout-trigger>a {
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 0.2em;
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    color: #999;
-    margin: 0px 0 0 14px;
-    top: 4px;
-    position: relative;
-}
-
-.flyout-menu-box>.flyout-trigger>a:hover {
-    box-shadow: none;
-    background: rgba(255, 255, 255, 0.98);
-    color: #000;
-}
-
-.flyout-menu-box>.flyout-trigger .flyout-menu-container>.flyout-menu>li>a {
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 0.2em;
-    color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-
-.flyout-menu-box>.flyout-trigger .flyout-menu-container>.flyout-menu>li>a:hover {
-    background: rgba( 255, 255, 255, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-
-.flyout-menu-box>.flyout-trigger .flyout-menu-container {
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    color: #fff;
-}
-
-.flyout-menu-box>label {
-    font-weight: 100;
-    color: #666;
-}
-
-#genreSortOrder .flyout-menu-box>label:after {
-    content: ":";
-    color: #666;
-}
-
-.flyout-menu-box>.flyout-trigger {
-    top: -2px;
-}
-
-.member-header-2014 #global-search div #searchField, #hd #global-search-form #global-search #searchField {
-    font-size: 18px;
-    font-family: 'Oswald';
-}
-
-#global-search div #searchField.default, #hd #global-search-form #global-search #searchField {
-    background: rgba(0, 0, 0, 0);
-    border: 1px solid rgba(0, 0, 0, 0);
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-#global-search div #searchField, #hd #global-search-form #global-search #searchField {
-    background: rgba(0, 0, 0, 0);
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-#bd {
-    margin: 60px 40px 0 40px ;
-}
-
-.member-header-2014 #global-search div #searchField:before {
-    content: "Sök efter";
-    color: #fff;
-    background: Red;
-    position: absolute;
-}
-
-#global-search button {
-    left: -16px;
-    top: 35px;
-}
-
-#profileSelector .current-profile .avatar {
-    display: none;
-}
-
-#profileSelector .current-profile .name, #account-tools .acct-menu-dropdown-trigger {
-    font-weight: 100;
-    font-size: 19px;
-    top: -2px;
-    position: relative;
-    color: #333;
-}
-
-#genreControls>.rightControls #genreSortOrder>.flyout-trigger {
-    min-width: 180px;
-}
-
-#hd .nav-wrap .subnav-wrap {
-    /*display: none;*/
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0);
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    color: #fff;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-#hd .subnav-wrap .sub-nav-tabs li {
-    margin: 10px 0 10px 0;
-}
-
-#hd .nav-wrap #global-header li.nav-item ul a {
-    text-shadow: none;
-    font-size: 18px;
-    font-weight: 100;
-    font-family: 'Oswald', sans-serif;
-    line-height: 28px;
-    border: none;
-}
-
-#hd .nav-wrap #global-header li.nav-item ul a:hover {
-    text-decoration: none;
-    border: none;
-}
-
-.sub-nav-tab-divider {
-    background-color: #333;
-    left: 165px;
-    height: 100%;
-}
-
-/*#hd .subnav-wrap {
-    display: block;
-    opacity: 0;
-}
-
-#hd .nav-wrap #global-header li.selected .subnav-wrap {
-    display: block;
-    opacity: 1;
-}*/
-
-#profileSelector .profiles-container {
-    background: rgba(0, 0, 0, 0.8);
-    border: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-#profileSelector .profiles {
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-#profileSelector .links {
-    background: rgba(0, 0, 0, 0.2);
-    border: none;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-#profileSelector .profiles-container a {
-    color: #fff;
-    font-weight: 100;
-    border: none;
-}
-
-.profiles-container a:hover {
-    border: none;
-}
-
-.lockup a {
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0) ;
-}
-
-.lockup:hover>.playHover {
-}
-
-#bob-container, #BobMovie-content {
-    background-color: rgba(0, 0, 0, 0.8);
-    font-weight: 100;
-    box-shadow: none;
-    border: none;
-}
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 #BobMovie {
-    font-weight: 100;
-    box-shadow: none;
     -webkit-box-shadow: none;
     border: none;
-}
-
-#bob-container .bob-header, .bobMovieHeader {
-    background: rgba(185, 9, 11, 0.3);
+    box-shadow: none;
+    font-weight: 100;
 }
 
 #BobMovie .bobMovieHeader {
@@ -397,37 +22,25 @@ a:hover {
 }
 
 #BobMovie .interactive .title {
-    font-size: 30px;
     background: none;
+    font-size: 30px;
 }
 
-#bob-container .duration, #bob-container .mpaaRating, #bob-container .runtime, #bob-container .year, #bob-container .persons dt, #bob-container .bob-actions .ratingHeader, .nf-button {
+#BobMovie dt {
     font-weight: 100;
 }
 
-.nf-button {
-    font-size: 12px;
+#account-tools .acct-menu-dropdown-trigger {
+    background: transparent url(http://cdn-0.nflximg.com/en_us/ffe/headers/header_icons_sprite.png) 100% -74px no-repeat;
 }
 
-#bob-container .bob-buttons {
-    width: auto;
-    float: right;
-    background: rgba(0, 0, 0, 0.2);
+#bd {
+    margin: 60px 40px 0 40px ;
 }
 
-#bob-container .bob-buttons .cta-mylist>.icon {
-    display: none;
-}
-
-#bob-container .bob-buttons .nf-button, #bob-container .bob-buttons .nf-button:hover {
-    box-shadow: none;
-    margin: 0;
-}
-
-.starbar .cta-not-interested {
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    padding: 0;
+#billboard {
+    margin-bottom: 30px;
+    margin-top: -130px;
 }
 
 #bob-container .bob-actions {
@@ -442,25 +55,38 @@ a:hover {
     border-left: 41px solid rgba(0, 0, 0, 0.5);
 }
 
-#hd .nav-wrap #global-header li.nav-item-current, #hd .nav-wrap #global-header li.nav-item a {
-    font-size: 15px;
+#bob-container .bob-buttons {
+    background: rgba(0, 0, 0, 0.2);
+    float: right;
+    width: auto;
 }
 
-.controlTitle, .controlTitle a, .rowTitle {
-    font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-    color: #fff;
-    font-weight: 300 ;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+#bob-container .bob-buttons .cta-mylist>.icon {
+    display: none;
 }
 
-.rowTitle {
-    margin-left: 305px;
+#bob-container .bob-buttons .nf-button, #bob-container .bob-buttons .nf-button:hover {
+    box-shadow: none;
+    margin: 0;
 }
 
-#hd .logo a {
+#bob-container .bob-header, .bobMovieHeader {
+    background: rgba(185, 9, 11, 0.3);
+}
+
+#bob-container .duration, #bob-container .mpaaRating, #bob-container .runtime, #bob-container .year, #bob-container .persons dt, #bob-container .bob-actions .ratingHeader, .nf-button {
+    font-weight: 100;
+}
+
+#bob-container, #BobMovie-content {
+    background-color: rgba(0, 0, 0, 0.8);
     border: none;
+    box-shadow: none;
+    font-weight: 100;
+}
+
+#fground #bd.main-content {
+    background: #000;
 }
 
 #footer {
@@ -468,41 +94,274 @@ a:hover {
     border-top: 1px solid #222;
 }
 
-#footer .nav-wrapper, .tos-wrap {
-    margin: 0px 0 0 20px;
-}
-
-#account-tools .acct-menu-dropdown-trigger {
-    background: transparent url(http://cdn-0.nflximg.com/en_us/ffe/headers/header_icons_sprite.png) 100% -74px no-repeat;
-}
-
-.bobbable {
-    width: 100% ;
-    height: auto ;
-}
-
 #footer .nav-wrapper {
     margin-top: 20px;
 }
 
-.profileImg, #BobMovie-arrow {
+#footer .nav-wrapper, .tos-wrap {
+    margin: 0px 0 0 20px;
+}
+
+#genreControls {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom: 1px solid #333;
+    box-shadow: none;
+    padding: 0 0 10px 0;
+}
+
+#genreControls>.rightControls #genreSortOrder>.flyout-trigger {
+    min-width: 180px;
+}
+
+#genrePage {
+    padding: 0;
+}
+
+#genreSortOrder .flyout-menu-box>label:after {
+    color: #666;
+    content: ":";
+}
+
+#global-search button {
+    left: -16px;
+    top: 35px;
+}
+
+#global-search div #searchField, #hd #global-search-form #global-search #searchField {
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease;
+}
+
+#global-search div #searchField.default, #hd #global-search-form #global-search #searchField {
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all 200ms ease;
+}
+
+#hd .logo a {
+    border: none;
+}
+
+#hd .nav-wrap #global-header li.nav-item ul a {
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    text-shadow: none;
+}
+
+#hd .nav-wrap #global-header li.nav-item ul a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+#hd .nav-wrap #global-header li.nav-item-current, #hd .nav-wrap #global-header li.nav-item a {
+    font-size: 15px;
+}
+
+#hd .nav-wrap .subnav-wrap {
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -webkit-box-shadow: none;
+    -webkit-transition: all 200ms ease;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: none;
+    color: #fff;
+    transition: all 200ms ease;
+}
+
+#hd .subnav-wrap .sub-nav-tabs li {
+    margin: 10px 0 10px 0;
+}
+
+#hd:hover {
+    background: #fff;
+}
+
+#profileSelector .current-profile .avatar {
     display: none;
 }
 
-.lockup>.playHover {
-    background-image: none;
+#profileSelector .current-profile .name, #account-tools .acct-menu-dropdown-trigger {
+    color: #333;
+    font-size: 19px;
+    font-weight: 100;
+    position: relative;
+    top: -2px;
+}
+
+#profileSelector .links {
+    -webkit-box-shadow: none;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    box-shadow: none;
+}
+
+#profileSelector .profiles {
+    -webkit-box-shadow: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    box-shadow: none;
+}
+
+#profileSelector .profiles-container {
+    -webkit-box-shadow: none;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    box-shadow: none;
+}
+
+#profileSelector .profiles-container a {
+    border: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+.BobMovie-arrow {
+    display: none;
+}
+
+.agMovie .boxShot img {
+    height: auto;
+    width: 100%;
+}
+
+.agMovieSetSlider .agMovie {
+    height: auto;
+    width: 250px;
 }
 
 .agMovieSetSlider .boxShotDivider, .mrows .mrow .evidence, .mrows .mrow .facet-control {
     display: none;
 }
 
-.mrow .triangleBtns .sliderButton, .mrow .slider-button {
-    height: 420px;
-    max-height: 420px;
+.agMovieSetSlider span.boxShot {
+    border: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-span.boxShot-197 a.playLink:hover, span.boxShot-197 a.playLinkNotBobbable:hover, span.boxShot-197.active > a.playLink, span.boxShot-197.active > a.playLinkNotBobbable, span.boxShot-166 a.playLink:hover, span.boxShot-166 a.playLinkNotBobbable:hover, span.boxShot-166.active > a.playLink, span.boxShot-166.active > a.playLinkNotBobbable, span.boxShot-150 a.playLink:hover, span.boxShot-150 a.playLinkNotBobbable:hover, span.boxShot-150.active > a.playLink, span.boxShot-150.active > a.playLinkNotBobbable {
+.bobbable {
+    height: auto ;
+    width: 100% ;
+}
+
+.body-new-header>.bd {
+    margin: 120px 40px 0 40px;
+}
+
+.controlTitle, .controlTitle a, .rowTitle {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300 ;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.dmbr .content div .rate-container .rate-boxshot .boxShot {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.flyout-menu-box>.flyout-trigger {
+    top: -2px;
+}
+
+.flyout-menu-box>.flyout-trigger .flyout-menu-container {
+    -webkit-box-shadow: none;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: none;
+    color: #fff;
+}
+
+.flyout-menu-box>.flyout-trigger .flyout-menu-container>.flyout-menu>li>a {
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.flyout-menu-box>.flyout-trigger .flyout-menu-container>.flyout-menu>li>a:hover {
+    background: rgba( 255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.flyout-menu-box>.flyout-trigger>a {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    color: #999;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    margin: 0px 0 0 14px;
+    position: relative;
+    text-transform: uppercase;
+    top: 4px;
+}
+
+.flyout-menu-box>.flyout-trigger>a:hover {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: none;
+    color: #000;
+}
+
+.flyout-menu-box>label {
+    color: #666;
+    font-weight: 100;
+}
+
+.headerShadow {
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    transition: all 350ms ease;
+}
+
+.lockup {
+    border: none;
+    height: auto;
+    margin: 0;
+    width: 12.5%;
+}
+
+.lockup a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0) ;
+    height: 100%;
+    width: 100%;
+}
+
+.lockup img {
+    height: auto;
+    width: 100%;
+}
+
+.lockup:hover>.playHover {
+}
+
+.lockup>.playHover {
     background-image: none;
 }
 
@@ -510,23 +369,195 @@ span.boxShot-197 a.playLink:hover, span.boxShot-197 a.playLinkNotBobbable:hover,
     margin-top: 50px;
 }
 
-a.playLink {
+.mdpLink, #BobMovie .bobMovieHeader .title, .mdpLink:hover, #BobMovie .bobMovieHeader .title:hover {
     border: none;
 }
 
-.mrow-rating, .mrow-rating .hd, .mrow-rating .bd {
-    background-color: #000;
+.member-header-2014 #global-search div #searchField, #hd #global-search-form #global-search #searchField {
+    font-family: 'Oswald';
+    font-size: 18px;
 }
 
-#BobMovie dt {
-    font-weight: 100;
+.member-header-2014 #global-search div #searchField:before {
+    background: Red;
+    color: #fff;
+    content: "Sök efter";
+    position: absolute;
+}
+
+.member-header-2014:hover, #hd:hover {
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    background-color: rgba(255,255,255,0.98);
+    transition: all 350ms ease;
+}
+
+.mrow .bd .recentlyWatched, .recentlyWatched .agMovie {
+    border: none;
+    width: 250px;
 }
 
 .mrow .hd {
     height: 40px;
 }
 
-.mdpLink, #BobMovie .bobMovieHeader .title, .mdpLink:hover, #BobMovie .bobMovieHeader .title:hover {
+.mrow .hd h3 {
+    margin-bottom: 20px;
+}
+
+.mrow .hd h3, .mrow .hd h3 a {
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-weight: 100 ;
+    text-transform: uppercase ;
+}
+
+.mrow .triangleBtns .sliderButton, .mrow .slider-button {
+    height: 420px;
+    max-height: 420px;
+}
+
+.mrow-rating, .mrow-rating .hd, .mrow-rating .bd {
+    background-color: #000;
+}
+
+.nf-button {
+    font-size: 12px;
+}
+
+.profileImg, #BobMovie-arrow {
+    display: none;
+}
+
+.profiles-container a:hover {
     border: none;
 }
 
+.recentlyWatched .boxShot {
+    width: 100%;
+}
+
+.recentlyWatched, .recentlyWatched .agMovie, .agMovie .boxShot img, .recentlyWatched .boxShot {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rowTitle {
+    margin-left: 305px;
+}
+
+.slider {
+    height: 355px;
+}
+
+.starbar .cta-not-interested {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+}
+
+.sub-nav-tab-divider {
+    background-color: #333;
+    height: 100%;
+    left: 165px;
+}
+
+.title, .dmbr .content .dmbr-header-container h2.dmbr-header {
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+a {
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+a.playLink {
+    border: none;
+}
+
+a:hover {
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    border-bottom: 1px solid #e3e3e3;
+    transition: all 200ms ease;
+}
+
+@media  (max-width: 1200px) {
+  .lockup {    
+    width: 20% !important;
+  }
+}
+
+@media  (max-width: 600px) {
+  .lockup {    
+    width: 33.33% !important;
+  }
+}
+
+@media  (max-width: 1200px) {
+  .lockup {    
+    width: 20% !important;
+  }
+}
+
+@media  (max-width: 600px) {
+  .lockup {    
+    width: 33.33% !important;
+  }
+}
+
+body {
+    background: #000;
+    color: #eaeaea;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, .dmbr, .taste-container .taste-ribbon {
+    background: #000;
+    border: none;
+}
+
+img:hover, img a:hover {
+    border: none;
+}
+
+span.boxShot-197 a.playLink:hover, span.boxShot-197 a.playLinkNotBobbable:hover, span.boxShot-197.active > a.playLink, span.boxShot-197.active > a.playLinkNotBobbable, span.boxShot-166 a.playLink:hover, span.boxShot-166 a.playLinkNotBobbable:hover, span.boxShot-166.active > a.playLink, span.boxShot-166.active > a.playLinkNotBobbable, span.boxShot-150 a.playLink:hover, span.boxShot-150 a.playLinkNotBobbable:hover, span.boxShot-150.active > a.playLink, span.boxShot-150.active > a.playLinkNotBobbable {
+    background-image: none;
+}
+
+.member-header-2014, #hd {
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    transition: all 350ms ease;
+}
+
+@media  (max-width: 1200px) {
+  .lockup {    
+    width: 20% !important;
+  }
+}
+
+@media  (max-width: 600px) {
+  .lockup {    
+    width: 33.33% !important;
+  }
+}
